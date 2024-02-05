@@ -37,5 +37,13 @@ $ pnpm run test:e2e
 # test coverage
 $ pnpm run test:cov
 ```
+## 鸣谢
+灵感来源：[mmyo456/blidownload](https://github.com/mmyo456/blidownload)
+
+[Nestjs](https://nestjs.com/)
 
 
+## 画饼
+- [ ] 直播解析
+- [ ] 搜索功能
+- [ ] 网易云音乐解析（感觉没啥必要）
