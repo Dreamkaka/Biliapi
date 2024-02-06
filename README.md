@@ -1,10 +1,10 @@
-# blidown
+# VRCAX
 
-一个简单的哔哩哔哩解析，使用nest编写
+一个简单的解析接口聚合，使用nest编写
+**仅供学习交流，严禁用于商业用途!**
 
 ## 使用
 访问https://vrc-api-xiaohan.apifox.cn 查看接口文档
-
 
 ## 本地开发
 
@@ -42,8 +42,11 @@ $ pnpm run test:cov
 
 [Nestjs](https://nestjs.com/)
 
+[NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)
+
+
 
 ## 画饼
-- [ ] 直播解析
+- [x] 直播解析
 - [ ] 搜索功能
-- [ ] 网易云音乐解析（感觉没啥必要）
+- [x] 网易云音乐解析

@@ -2,6 +2,7 @@
 
 import { Controller, Get, Query, Res } from '@nestjs/common';
 import { LazyvideoService } from './lazyvideo.service';
+import { LiveService } from 'src/live/live.service';
 import { Response } from 'express';
 import { ApiTags,ApiOperation } from '@nestjs/swagger';
 
@@ -15,7 +16,7 @@ export class LazyvideoController {
   async getPlayUrl(@Query('url') encodedUrl: string, @Res() res: Response) {
     try {
 
-      // 使用正则表达式从解码后的 URL 中提取 BV 号
+      // 使用正则表达式提取BV号
       const match = encodedUrl.match(/BV([a-zA-Z0-9]{10})/);
       const bvid = match ? match[1] : null;
 
@@ -39,3 +40,6 @@ export class LazyvideoController {
     }
   }
 }
+
+
+

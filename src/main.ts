@@ -6,9 +6,9 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
-   .setTitle('哔哩哔哩api')
-   .setDescription('一个解析哔哩哔哩视频的接口')
-   .setVersion('1.0')
+   .setTitle('VRCAX')
+   .setDescription('一个简单的接口集合，用于为vrchat内的视频播放器提供解析支持')
+   .setVersion('1.2')
   // .addTag('bilibili')
    .build();
 
