@@ -7,10 +7,13 @@ import { LazyvideoModule } from './lazyvideo/lazyvideo.module';
 import { LiveModule } from './live/live.module';
 import { NetmusicModule } from './netmusic/netmusic.module';
 import { NetmusicMvModule } from './netmusic-mv/netmusic-mv.module';
+import { TerminusModule } from '@nestjs/terminus';
+import { HealthController } from './health/health.controller';
+import { HealthModule } from './health/health.module';
 
 @Module({
-  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,],
-  controllers: [AppController],
+  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,],
+  controllers: [AppController, HealthController],
   providers: [AppService],
 })
 export class AppModule {}
