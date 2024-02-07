@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "regions": ["sfo1"]
+    "regions": ["sfo1"],
     "builds": [
       {
         "src": "src/main.ts",
