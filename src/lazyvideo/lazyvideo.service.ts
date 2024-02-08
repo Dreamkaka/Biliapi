@@ -5,7 +5,7 @@ import axios from 'axios';
 
 @Injectable()
 export class LazyvideoService {
-  private readonly cookie: string = 'SESSDATA=e1d83f51%2C1722531145%2Cf0627%2A21CjC7p6hesjKbhVYJ5nPUt_8dcdQpKOeWgHrRR5DlJgFBIeieK_1znZhKysdbrJ_Bh6gSVkQtNE5qOWRGOTVSYmJ6cGJyNkxLRDBtY0NTUUs2dTRiV0hJcWhBM0pmT2FtajFaaW9FWGNwWG92bE45UEwwMElEUG4tbkQzWFJpcWQ4Zko0M01FU3d3IIEC'; // 替换为你的实际 cookie 值
+  private readonly cookie: string = 'SESSDATA=2b8e0c0e%2C1722793325%2Ca0fb1%2A21CjBvJx_t9ICqWpX36aLNNe3YtgW_XCbuMlqLxWhW9vXGSEQ2Ao3GcXAuYIHxG3jpcd8SVkFjNHBGZ29kQ0JoN3VPTTYtRzFkUTZ0Sk1PTW83aDl2cnBySFFDS0JpMEFJVlA2ZDM3UUp2bnJTTXBUQllXcTFheTVLWno2MTZ3azE5Wkl5OWtFamFRIIEC'; // SESSDATA
 
   async getCid(bvid: string) {
     const apiUrl = 'https://api.bilibili.com/x/player/pagelist';

@@ -10,9 +10,10 @@ import { NetmusicMvModule } from './netmusic-mv/netmusic-mv.module';
 import { TerminusModule } from '@nestjs/terminus';
 import { HealthController } from './health/health.controller';
 import { HealthModule } from './health/health.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,],
+  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,ConfigModule.forRoot()],
   controllers: [AppController, HealthController],
   providers: [AppService],
 })
