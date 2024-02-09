@@ -9,7 +9,7 @@ async function bootstrap() {
   const config = new DocumentBuilder()
    .setTitle('bli-download')
    .setDescription('一个简单的哔哩哔哩接口和其他的接口聚合')
-   .setVersion('1.2.1')
+   .setVersion('1.2.2')
   // .addTag('bilibili')
    .build();
 

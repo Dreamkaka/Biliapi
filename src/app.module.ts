@@ -11,9 +11,10 @@ import { TerminusModule } from '@nestjs/terminus';
 import { HealthController } from './health/health.controller';
 import { HealthModule } from './health/health.module';
 import { ConfigModule } from '@nestjs/config';
+import { IpModule } from './ip/ip.module';
 
 @Module({
-  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,ConfigModule.forRoot()],
+  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,ConfigModule.forRoot(), IpModule],
   controllers: [AppController, HealthController],
   providers: [AppService],
 })
