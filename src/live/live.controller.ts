@@ -15,7 +15,7 @@ export class LiveController {
     }
 
     @ApiTags('视频跳转')
-    @ApiOperation({ summary: '播放直播流，不确定vrc是否支持播放flv格式的视频流' })
+    @ApiOperation({ summary: '播放直播流' })
     @Get('playlive')
     async playLiveStream(@Query('url') url: string, @Res() res: Response) {
         try {
