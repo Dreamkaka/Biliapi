@@ -15,6 +15,7 @@ export class HealthController {
   check() {
     return this.health.check([
       () => this.http.pingCheck('vrcax', 'https://vrc-api.xiaohan-kaka.gay'),
+      () => this.http.pingCheck('music-api', 'https://music-api.xiaohan-kaka.gay'),
     ]);
   }
 }
