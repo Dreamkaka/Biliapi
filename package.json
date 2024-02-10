@@ -29,10 +29,13 @@
     "@nestjs/swagger": "^7.2.0",
     "@nestjs/terminus": "^10.2.1",
     "axios": "^1.6.7",
+    "md5": "^2.3.0",
+    "moment-timezone": "^0.5.45",
     "node-fetch": "^3.3.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
-    "ts-md5": "^1.3.1"
+    "ts-md5": "^1.3.1",
+    "webassembly": "^0.11.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",

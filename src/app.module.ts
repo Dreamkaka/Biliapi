@@ -12,9 +12,11 @@ import { HealthController } from './health/health.controller';
 import { HealthModule } from './health/health.module';
 import { ConfigModule } from '@nestjs/config';
 import { IpModule } from './ip/ip.module';
+import { CorrespondPathModule } from './correspond-path/correspond-path.module';
+
 
 @Module({
-  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,ConfigModule.forRoot(), IpModule],
+  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,ConfigModule.forRoot(), IpModule, CorrespondPathModule,],
   controllers: [AppController, HealthController],
   providers: [AppService],
 })

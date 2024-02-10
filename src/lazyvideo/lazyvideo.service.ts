@@ -2,10 +2,15 @@
 
 import { Injectable } from '@nestjs/common';
 import axios from 'axios';
+import { ConfigService } from '@nestjs/config';
 
 @Injectable()
 export class LazyvideoService {
-  private readonly cookie: string = 'SESSDATA=2b8e0c0e%2C1722793325%2Ca0fb1%2A21CjBvJx_t9ICqWpX36aLNNe3YtgW_XCbuMlqLxWhW9vXGSEQ2Ao3GcXAuYIHxG3jpcd8SVkFjNHBGZ29kQ0JoN3VPTTYtRzFkUTZ0Sk1PTW83aDl2cnBySFFDS0JpMEFJVlA2ZDM3UUp2bnJTTXBUQllXcTFheTVLWno2MTZ3azE5Wkl5OWtFamFRIIEC'; // SESSDATA
+  private readonly cookie: string; // 声明 cookie 属性
+
+  constructor(private readonly configService: ConfigService) { // 注入 ConfigService
+    this.cookie = this.configService.get('SESSDATA'); // 使用 ConfigService 获取环境变量
+  }
 
   async getCid(bvid: string) {
     const apiUrl = 'https://api.bilibili.com/x/player/pagelist';

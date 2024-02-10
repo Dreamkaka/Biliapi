@@ -1,9 +1,14 @@
 import { Injectable } from '@nestjs/common'
 import axios from 'axios'
+import { ConfigService } from '@nestjs/config';
 
 @Injectable()
 export class GetvideoService {
-    private readonly cookie: string = 'SESSDATA=2b8e0c0e%2C1722793325%2Ca0fb1%2A21CjBvJx_t9ICqWpX36aLNNe3YtgW_XCbuMlqLxWhW9vXGSEQ2Ao3GcXAuYIHxG3jpcd8SVkFjNHBGZ29kQ0JoN3VPTTYtRzFkUTZ0Sk1PTW83aDl2cnBySFFDS0JpMEFJVlA2ZDM3UUp2bnJTTXBUQllXcTFheTVLWno2MTZ3azE5Wkl5OWtFamFRIIEC' // sessdata
+    private readonly cookie: string;
+
+    constructor(private readonly configService: ConfigService) {
+        this.cookie = this.configService.get<string>('SESSDATA');
+    }
     async getcid(bvid: string) {
         const apiurl = 'https://api.bilibili.com/x/player/pagelist'
 
@@ -11,7 +16,7 @@ export class GetvideoService {
             bvid,
         };
         try {
-            const response = await axios.get(apiurl, { params, headers: { 'cookie': this.cookie } });
+            const response = await axios.get(apiurl, { params, headers: { 'cookie':this.cookie } });
             const cid = response.data.data[0].cid;
             return cid;
         } catch (error) {
