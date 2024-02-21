@@ -1,5 +1,6 @@
 import { Controller, Get, Query, Res } from '@nestjs/common';
 import { LiveService } from './live.service';
+import { flvservice } from './live.service';
 import { Response } from 'express';
 import { ApiTags, ApiOperation } from '@nestjs/swagger';
 
@@ -41,4 +42,7 @@ export class LiveController {
             return res.status(500).json({ message: `无法播放直播: ${error.message}` });
         }
     }
+
+// 待办：flv直播
+
 }

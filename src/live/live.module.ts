@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { LiveController } from './live.controller';
-import { LiveService } from './live.service';
+import { LiveService, flvservice } from './live.service';
 
 @Module({
   controllers: [LiveController],

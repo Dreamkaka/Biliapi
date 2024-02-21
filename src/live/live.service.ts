@@ -14,4 +14,21 @@ export class LiveService {
             
         }
     }
+
 }
+    export class flvservice {
+        
+    
+    async getflvstreamUrl(roomid: string) {
+        try {
+            const qn = 10000;
+            const platform = 'web';
+            const response = await axios.get(`https://api.live.bilibili.com/room/v1/Room/playUrl?cid=${roomid}&platform=${platform}&qn=${qn}`);
+            return response.data;
+        } catch (error) {
+            throw new Error("获取直播链接失败");
+            
+        }
+    }
+
+    }
