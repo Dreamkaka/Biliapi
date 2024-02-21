@@ -26,9 +26,6 @@ dependencies:
   '@nestjs/terminus':
     specifier: ^10.2.1
     version: 10.2.1(@nestjs/axios@3.0.2)(@nestjs/common@10.3.1)(@nestjs/core@10.3.1)(reflect-metadata@0.1.14)(rxjs@7.8.1)
-  '@willsoto/nestjs-prometheus':
-    specifier: ^6.0.0
-    version: 6.0.0(@nestjs/common@10.3.1)(prom-client@15.1.0)
   axios:
     specifier: ^1.6.7
     version: 1.6.7
@@ -41,9 +38,6 @@ dependencies:
   node-fetch:
     specifier: ^3.3.2
     version: 3.3.2
-  prom-client:
-    specifier: ^15.1.0
-    version: 15.1.0
   reflect-metadata:
     specifier: ^0.1.13
     version: 0.1.14
@@ -1211,11 +1205,6 @@ packages:
     transitivePeerDependencies:
       - encoding
 
-  /@opentelemetry/api@1.7.0:
-    resolution: {integrity: sha512-AdY5wvN0P2vXBi3b29hxZgSFvdhdxPB9+f0B6s//P9Q8nibRWeA3cHm8UmLpio9ABigkVHJ5NMPk+Mz8VCCyrw==}
-    engines: {node: '>=8.0.0'}
-    dev: false
-
   /@pkgjs/parseargs@0.11.0:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
@@ -1695,16 +1684,6 @@ packages:
       '@xtuc/long': 4.2.2
     dev: true
 
-  /@willsoto/nestjs-prometheus@6.0.0(@nestjs/common@10.3.1)(prom-client@15.1.0):
-    resolution: {integrity: sha512-Krmda5CT9xDPjab8Eqdqiwi7xkZSX60A5rEGVLEDjUG6J6Rw5SCZ/BPaRk+MxNGWzUrRkM7K5FtTg38vWIOt1Q==}
-    peerDependencies:
-      '@nestjs/common': ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
-      prom-client: ^15.0.0
-    dependencies:
-      '@nestjs/common': 10.3.1(reflect-metadata@0.1.14)(rxjs@7.8.1)
-      prom-client: 15.1.0
-    dev: false
-
   /@xtuc/ieee754@1.2.0:
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
     dev: true
@@ -2012,10 +1991,6 @@ packages:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
     dev: true
-
-  /bintrees@1.0.2:
-    resolution: {integrity: sha512-VOMgTMwjAaUG580SXn3LacVgjurrbMme7ZZNYGSSV7mmtY6QQRh0Eg3pwIcntQ77DErK1L0NxkbetjcoXzVwKw==}
-    dev: false
 
   /bl@1.2.3:
     resolution: {integrity: sha512-pvcNpa0UU69UT341rO6AYy4FVAIkUHuZXRIWbq+zHnsVcRzDDjIAhGuuYoi0d//cwIwtt4pkpKycWEfjdV+vww==}
@@ -4657,14 +4632,6 @@ packages:
   /process-nextick-args@2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
 
-  /prom-client@15.1.0:
-    resolution: {integrity: sha512-cCD7jLTqyPdjEPBo/Xk4Iu8jxjuZgZJ3e/oET3L+ZwOuap/7Cw3dH/TJSsZKs1TQLZ2IHpIlRAKw82ef06kmMw==}
-    engines: {node: ^16 || ^18 || >=20}
-    dependencies:
-      '@opentelemetry/api': 1.7.0
-      tdigest: 0.1.2
-    dev: false
-
   /prompts@2.4.2:
     resolution: {integrity: sha512-NxNv/kLguCA7p3jE8oL2aEBsrJWgAakBpgmgK6lpPWV+WuOmY6r2/zbAVnP+T8bQlA0nzHXSJSJW0Hq7ylaD2Q==}
     engines: {node: '>= 6'}
@@ -5244,12 +5211,6 @@ packages:
       block-stream: 0.0.9
       fstream: 1.0.12
       inherits: 2.0.4
-    dev: false
-
-  /tdigest@0.1.2:
-    resolution: {integrity: sha512-+G0LLgjjo9BZX2MfdvPfH+MKLCrxlXSYec5DaPYP1fe6Iyhf0/fSmJ0bFiZ1F8BT6cGXl2LpltQptzjXKWEkKA==}
-    dependencies:
-      bintrees: 1.0.2
     dev: false
 
   /terser-webpack-plugin@5.3.10(webpack@5.90.1):

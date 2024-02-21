@@ -12,13 +12,13 @@ import { HealthController } from './health/health.controller';
 import { HealthModule } from './health/health.module';
 import { ConfigModule } from '@nestjs/config';
 import { IpModule } from './ip/ip.module';
-import { PrometheusModule } from "@willsoto/nestjs-prometheus";
+
 
 
 
 
 @Module({
-  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,ConfigModule.forRoot(), IpModule,PrometheusModule.register()],
+  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,ConfigModule.forRoot(), IpModule,],
   controllers: [AppController, HealthController],
   providers: [AppService],
 })
