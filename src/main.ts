@@ -10,7 +10,7 @@ async function bootstrap() {
   const config = new DocumentBuilder()
   .setTitle('bli-download')
   .setDescription('一个简单的哔哩哔哩解析和其他的接口聚合')
-  .setVersion('1.2.2')
+  .setVersion('1.5.2')
 //  .addTag('cats')
   .build()
 
@@ -23,7 +23,7 @@ const OpenApiSpecification =
   app.use(
     '/docs',
     apiReference({
-      theme: 'deepSpace',
+      theme: 'default',
       spec: {
         content: document,
       },

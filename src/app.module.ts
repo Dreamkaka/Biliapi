@@ -12,6 +12,11 @@ import { HealthController } from './health/health.controller';
 import { HealthModule } from './health/health.module';
 import { ConfigModule } from '@nestjs/config';
 import { IpModule } from './ip/ip.module';
+import { SearchModule } from './search/search.module';
+import { NetmusicSearchModule } from './netmusic-search/netmusic-search.module';
+import { InfoModule } from './info/info.module';
+import { PixivRankingModule } from './pixiv-ranking/pixiv-ranking.module';
+import { PixivModule } from './pixiv/pixiv.module';
 
 
 
@@ -20,7 +25,7 @@ import { IpModule } from './ip/ip.module';
 
 
 @Module({
-  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,ConfigModule.forRoot(), IpModule,],
+  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,ConfigModule.forRoot(), IpModule, SearchModule, NetmusicSearchModule, InfoModule, PixivRankingModule, PixivModule,],
   controllers: [AppController, HealthController],
   providers: [AppService],
 })
