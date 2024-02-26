@@ -4,7 +4,7 @@
 **仅供学习交流，严禁用于商业用途!**
 
 ## 使用
-访问https://vrc-api-xiaohan.apifox.cn 查看接口文档
+访问https://vrc-api.xiaohan-kaka.gay/docs 查看接口文档
 
 ## 本地开发
 
@@ -42,11 +42,12 @@ $ pnpm run test:cov
 
 [Nestjs](https://nestjs.com/)
 
-[NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)
+[NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi
+[pixiv-now](https://github.com/FreeNowOrg/PixivNow)
 
 
 
 ## 画饼
 - [x] 直播解析
-- [ ] 搜索功能
+- [x] 搜索功能
 - [x] 网易云音乐解析
