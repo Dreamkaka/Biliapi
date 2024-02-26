@@ -42,7 +42,8 @@ $ pnpm run test:cov
 
 [Nestjs](https://nestjs.com/)
 
-[NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi
+[NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)
+
 [pixiv-now](https://github.com/FreeNowOrg/PixivNow)
 
 
