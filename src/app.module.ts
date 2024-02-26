@@ -17,6 +17,8 @@ import { IpModule } from './ip/ip.module';
 
 
 
+
+
 @Module({
   imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,ConfigModule.forRoot(), IpModule,],
   controllers: [AppController, HealthController],
