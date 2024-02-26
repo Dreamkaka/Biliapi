@@ -1,18 +1,17 @@
 // lazyvideo.controller.ts
 
 import { Controller, Get, Query, Res } from '@nestjs/common';
-import { LazyvideoService } from './lazyvideo.service';
-import { LiveService } from 'src/live/live.service';
+import { LazyvideoService } from './player.service';
 import { Response } from 'express';
 import { ApiTags,ApiOperation } from '@nestjs/swagger';
 
-@Controller('lazyvideo')
+@Controller('player')
 export class LazyvideoController {
   constructor(private readonly lazyvideoService: LazyvideoService) {}
   
   @ApiTags('视频跳转')
   @ApiOperation({ summary: '直接跳转视频' })
-  @Get('playurl')
+  @Get('')
   async getPlayUrl(@Query('url') encodedUrl: string, @Res() res: Response) {
     try {
 

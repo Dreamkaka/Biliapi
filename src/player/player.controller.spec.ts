@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { LazyvideoController } from './lazyvideo.controller';
+import { LazyvideoController } from './player.controller';
 
 describe('LazyvideoController', () => {
   let controller: LazyvideoController;

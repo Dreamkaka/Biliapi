@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { LazyvideoService } from './lazyvideo.service';
-import { LazyvideoController } from './lazyvideo.controller';
+import { LazyvideoService } from './player.service';
+import { LazyvideoController } from './player.controller';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
