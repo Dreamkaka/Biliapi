@@ -24,6 +24,7 @@ const OpenApiSpecification =
     '/docs',
     apiReference({
       theme: 'default',
+      layout: 'classic',
       spec: {
         content: document,
       },
