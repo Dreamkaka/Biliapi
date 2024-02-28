@@ -52,3 +52,5 @@ $ pnpm run test:cov
 - [x] 直播解析
 - [x] 搜索功能
 - [x] 网易云音乐解析
+- [ ] wbi接口
+- [ ] cookie自動刷新
