@@ -53,4 +53,4 @@ $ pnpm run test:cov
 - [x] 搜索功能
 - [x] 网易云音乐解析
 - [ ] wbi接口
-- [ ] cookie自動刷新
+~~cookie自動刷新~~ 太複雜，拿無痕取cookie理論能長期存活
