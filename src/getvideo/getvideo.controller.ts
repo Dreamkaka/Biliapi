@@ -1,4 +1,4 @@
-import { Controller, Get, Query } from '@nestjs/common';
+import { Controller, Get, HttpException, HttpStatus, Query } from '@nestjs/common';
 import { GetvideoService } from './getvideo.service';
 import { ApiTags,ApiOperation } from '@nestjs/swagger';
 
@@ -15,7 +15,7 @@ export class GetvideoController {
         const playurl = await this.getvideoService.getPlayUrl(bvid);
         return playurl;
      } catch (error) {
-        throw new Error('获取播放地址失败');
+        throw new HttpException('获取播放地址失败', HttpStatus.INTERNAL_SERVER_ERROR);
      }
  }
 }
