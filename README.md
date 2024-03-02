@@ -4,7 +4,7 @@
 **仅供学习交流，严禁用于商业用途!**
 
 ## 使用
-访问https://vrc-api.xiaohan-kaka.gay/docs 查看接口文档
+访问https://bili.xiaohan-kaka.gay/docs 查看接口文档
 
 ## 本地开发
 
