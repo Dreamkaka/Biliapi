@@ -18,5 +18,6 @@
           "PATCH"
         ]
       }
-    ]
+    ],
+    "regions": ["sin1"]
   }
