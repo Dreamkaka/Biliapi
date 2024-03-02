@@ -4,7 +4,7 @@
 **仅供学习交流，严禁用于商业用途!**
 
 ## 使用
-访问https://vrc-api.xiaohan-kaka.gay/docs 查看接口文档
+访问https://bili.xiaohan-kaka.gay/docs 查看接口文档
 
 ## 本地开发
 
@@ -53,4 +53,4 @@ $ pnpm run test:cov
 - [x] 搜索功能
 - [x] 网易云音乐解析
 - [ ] wbi接口
-- [ ] cookie自動刷新
+~~cookie自動刷新~~ 太複雜，拿無痕取cookie理論能長期存活
