@@ -15,7 +15,7 @@ export class GetvideoController {
         const playurl = await this.getvideoService.getPlayUrl(bvid);
         return playurl;
      } catch (error) {
-        throw new error('获取播放地址失败');
+        throw new Error('获取播放地址失败');
      }
  }
 }
