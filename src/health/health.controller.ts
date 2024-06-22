@@ -16,9 +16,9 @@ export class HealthController {
   @HealthCheck()
   check() {
     return this.health.check([
-      () => this.http.pingCheck('bli-download', 'https://vrc-api.xiaohan-kaka.gay'),
-      () => this.http.pingCheck('music-api', 'https://music-api.xiaohan-kaka.gay'),
-      () => this.http.pingCheck('pixiv-api', 'https://pixiv-now.xiaohan-kaka.gay'),
+      () => this.http.pingCheck('bli-download', 'https://bili.xiaohan-kaka.me'),
+      () => this.http.pingCheck('music-api', 'https://music-api.xiaohan-kaka.me'),
+      () => this.http.pingCheck('pixiv-api', 'https://pixiv-now.xiaohan-kaka.me'),
     ]);
   }
 }

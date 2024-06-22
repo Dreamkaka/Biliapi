@@ -5,7 +5,7 @@ import axios from 'axios';
 export class PixivService {
     async getRandom(max: number,mode: string) {
         try {
-            const response = await axios.get('https://pixiv-now.xiaohan-kaka.gay/api/illust/random',{
+            const response = await axios.get('https://pixiv-now.xiaohan-kaka.me/api/illust/random',{
                 params:{
                     max,
                     mode,

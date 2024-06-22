@@ -17,6 +17,7 @@ import { NetmusicSearchModule } from './netmusic-search/netmusic-search.module';
 import { InfoModule } from './info/info.module';
 import { PixivRankingModule } from './pixiv-ranking/pixiv-ranking.module';
 import { PixivModule } from './pixiv/pixiv.module';
+import { CacheModule } from '@nestjs/cache-manager'
 
 
 
@@ -25,7 +26,7 @@ import { PixivModule } from './pixiv/pixiv.module';
 
 
 @Module({
-  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,ConfigModule.forRoot(), IpModule, SearchModule, NetmusicSearchModule, InfoModule, PixivRankingModule, PixivModule,],
+  imports: [GetcidModule,GetvideoModule,LazyvideoModule,LiveModule, NetmusicModule, NetmusicMvModule,TerminusModule, HealthModule,ConfigModule.forRoot(), IpModule, SearchModule, NetmusicSearchModule, InfoModule, PixivRankingModule, PixivModule,CacheModule.register()],
   controllers: [AppController, HealthController],
   providers: [AppService],
 })

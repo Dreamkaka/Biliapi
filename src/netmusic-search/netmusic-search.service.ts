@@ -4,7 +4,7 @@ import axios from 'axios';
 @Injectable()
 export class NetmusicSearchService {
      async search(keywords: string, limit: number): Promise<any> {
-      const url = 'https://music-api.xiaohan-kaka.gay/search';
+      const url = 'https://music-api.xiaohan-kaka.me/search';
       const params = {keywords, limit};
 
       try {

@@ -36,7 +36,7 @@ export class NetmusicController {
     private async fetchSongUrl(id: string) {
       try {
         // 发送请求获取音乐 URL
-        const response = await axios.get(`https://music-api.xiaohan-kaka.gay/song/url/v1?id=${id}&level=standard`);
+        const response = await axios.get(`https://music-api.xiaohan-kaka.me/song/url/?id=${id}`);
      //   console.log('Response data:', response.data); // 输出获取到的数据
         const { data } = response;
         if (!data || !Array.isArray(data.data) || data.data.length === 0) {
