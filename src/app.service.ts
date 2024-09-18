@@ -4,6 +4,6 @@ import { Injectable } from '@nestjs/common';
 export class AppService {
   getHello(): string {
     // eslint-disable-next-line prettier/prettier
-    return 'Goodbye World - AnKonia';
+    return 'lol,啥也木有';
   }
 }
